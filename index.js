@@ -1,4 +1,5 @@
 const http= require('http')
+const fs = require('fs')
 
 let reqCounter = 0;
 let ans=''
@@ -17,7 +18,9 @@ const server = http.createServer( (req,res)=> {
             break
         case '/favicon.ico':
             reqCounter--    
-            res.write('favicon')
+            img=fs.readFileSync('./favicon.ico')
+            res.writeHead(200,{'content-type': 'image/ico'})
+            res.write(img, 'binary')
             break
         default:
             res.write('404 not found \n') 
