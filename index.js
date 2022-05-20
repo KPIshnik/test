@@ -14,13 +14,11 @@ const server = http.createServer( (req,res)=> {
             res.write('Huita is hapening \n')
             break
         case '/mozg':
-            res.write('mozg is good :) \n')
+            res.write('MOZG is good')
             break
         case '/favicon.ico':
             reqCounter--    
-            img=fs.readFileSync('./favicon.ico')
-            res.writeHead(200,{'content-type': 'image/ico'})
-            res.write(img, 'binary')
+            res.writeHead(200,{'content-type':'image/x-icon'})
             break
         default:
             res.write('404 not found \n') 
