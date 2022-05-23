@@ -1,5 +1,5 @@
-const http= require('http')
-const fs = require('fs')
+import http from 'http'
+import fs from 'fs'
 
 let reqCounter = 0;
 let ans=''
