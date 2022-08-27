@@ -1,0 +1,23 @@
+POST https://3000-kpishnik-test-qj7onan95t7.ws-eu63.gitpod.io/users
+Content-Type: application/json
+
+{
+    "user":{"username": "Krush"}
+}
+
+###
+PUT https://3000-kpishnik-test-qj7onan95t7.ws-eu63.gitpod.io/users/7
+Content-Type: application/json
+
+{
+    "user":{"username": "Krush"}
+}
+
+
+
+###
+GET https://3000-kpishnik-test-qj7onan95t7.ws-eu63.gitpod.io/users?username=sdf
+
+
+###
+DELETE https://3000-kpishnik-test-qj7onan95t7.ws-eu63.gitpod.io/users/2
