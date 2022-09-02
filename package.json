@@ -1,23 +1,29 @@
 {
-  "dependencies": {
-    "express": "^4.18.1"
-  },
-  "name": "test",
-  "version": "1.0.0",
-  "main": "app.js",
-  "repository": "https://github.com/KPIshnik/test.git",
-  "author": "KPIshnik <dimoglo.anton@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^17.0.35",
-    "nodemon": "^2.0.16",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.4",
-    "yarn": "^1.22.18"
-  },
-  "scripts": {
-    "start": "yarn nodemon --inspect ./dist/index.js",
-    "compile": "tsc -W"
-  }
+	"dependencies": {
+		"express": "^4.18.1"
+	},
+	"name": "test",
+	"version": "1.0.0",
+	"main": "app.js",
+	"repository": "https://github.com/KPIshnik/test.git",
+	"author": "KPIshnik <dimoglo.anton@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"@types/jest": "^28.1.8",
+		"@types/node": "^17.0.35",
+		"@types/supertest": "^2.0.12",
+		"jest": "^29.0.1",
+		"nodemon": "^2.0.16",
+		"supertest": "^6.2.4",
+		"ts-jest": "^28.0.8",
+		"ts-node": "^10.7.0",
+		"typescript": "^4.6.4",
+		"yarn": "^1.22.18"
+	},
+	"scripts": {
+		"start": "yarn nodemon --inspect ./dist/index.js",
+		"compile": "tsc -W",
+		"test": "jest --silent --noStackTrace"
+	}
 }
